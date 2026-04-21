@@ -1,4 +1,12 @@
+
+https://github.com/user-attachments/assets/12ee4bcb-6d1c-496d-a70e-a5a1578a879e
+
+
+
+
+
 # VAINOM - Persistent Cognitive Engine
+[**⬇ Download VAINOM 0.5.8**](https://github.com/DVirdis/VAINOM/releases/latest) | [**🌐 vainom.com**](https://vainom.com)
 
 Welcome to the VAINOM Open Beta.
 
