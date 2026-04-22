@@ -106,13 +106,29 @@ If you really know what you are doing and want to experiment: place a GGUF embed
 
 If you don't want to stay fully offline, this is one of VAINOM's killer features.
 
-VAINOM ships with a built-in MCP (Model Context Protocol) server that exposes **9 tools** Claude Desktop can call directly: query and write into your memory, read your documents, save triples, persist the brain, and more. Claude stops being a stateless chatbox. Your VAINOM brain becomes its long-term memory.
+VAINOM ships with a built-in MCP (Model Context Protocol) server that exposes **9 tools** Claude Desktop can call directly: query and write into your memory, read your documents, persist the brain, and more. Claude stops being a stateless chatbox. Your VAINOM brain becomes its long-term memory.
 
 1. In VAINOM sidebar: click **MCP -> START**. The indicator walks through **START -> READY -> CONNECTED** as the handshake completes.
-2. In Claude Desktop, open Settings -> Developer -> Edit Config, and follow Claude's own instructions for adding a local MCP server. The bridge is already inside `VAINOM.exe` - you don't need to run anything extra.
+
+2. In Claude Desktop, open **Settings -> Developer -> Edit Config**. Add a `vainom` entry pointing to your VAINOM.exe:
+
+```json
+   {
+     "mcpServers": {
+       "vainom": {
+         "command": "C:\\path\\to\\VAINOM.exe"
+       }
+     }
+   }
+```
+
+   If the file already has other MCP servers, add `"vainom": {...}` inside the existing `mcpServers` block. The bridge is already inside `VAINOM.exe` - you don't need to run anything extra.
+
 3. Restart Claude Desktop.
 
 From that moment Claude can read, query, and write into your VAINOM brain. Your memory, shared across tools, still living only on your machine.
+
+**Note:** VAINOM must be running with MCP started for the tools to work in Claude.
 
 ---
 
