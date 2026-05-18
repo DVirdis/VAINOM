@@ -1,20 +1,21 @@
 
-https://github.com/user-attachments/assets/12ee4bcb-6d1c-496d-a70e-a5a1578a879e
-
-
-
-
-
 # VAINOM - Persistent Cognitive Engine
-[**⬇ Download VAINOM 0.5.8**](https://github.com/DVirdis/VAINOM/releases/latest) | [**🌐 vainom.com**](https://vainom.com)
+[**⬇ Download VAINOM 0.6**](https://github.com/DVirdis/VAINOM/releases/latest) | [**🌐 vainom.com**](https://vainom.com)
 
-Welcome to the VAINOM Open Beta.
+VAINOM is a local-first AI companion with real persistent memory. It runs entirely on your machine - your GPU, your disk, your rules - and it remembers you across sessions. Close it, wipe every chat, delete every document you ever gave it, and it still remembers you. The knowledge lives in the brain, not in the logs.
 
-This is not another chat app with a disconnected vector database bolted on. VAINOM runs entirely on your machine - your GPU, your disk, your rules - and it keeps a real memory across sessions. Close it, wipe every chat, delete every document you ever gave it, and it still remembers you. The knowledge lives in the brain, not in the logs.
+On **LongMemEval-S** (470 questions) we reached:
 
-**97.4% session recall on LongMemEval-S (470 questions, Session Recall@5).** That is the number. Not a marketing one. Measured the same way the official benchmark measures it. Which is why we are not afraid to put it first.
+- **97.7% Session Recall@5**
+- **88.3% Round Recall@5** (paper-canonical metric)
 
-On HotPotQA (200 hard multi-hop questions), VAINOM retrieved **100% of the supporting evidence at Recall@30**, **86.5% at Recall@5**, in **56.7 ms** average query time, on an RTX 4060 laptop - not a datacenter GPU.
+On **HotpotQA Distractor** (200 hard multi-hop questions) we reached:
+
+- **100% Recall@20**
+- **96% Recall@10**
+- **88% Recall@5**
+
+in **51.5 ms** average query time, on an RTX 4060 laptop.
 
 As far as we know, no fully local system running on consumer hardware has published comparable numbers.
 
@@ -161,7 +162,7 @@ The link between phone and PC is end-to-end encrypted. Nobody sitting between yo
 - Email: **hello@vainom.com** 
 - Instagram: **@vainom.exe**
 
-Tell us what broke, what surprised you, what made you uncomfortable, what you wish it did. This is an open beta. Your rough edges are our roadmap.
+Tell us what broke, what surprised you, what made you uncomfortable, what you wish it did. This is a public beta. Your rough edges are our roadmap.
 
 ---
 
@@ -171,4 +172,4 @@ Proprietary. All rights reserved.
 
 ---
 
-*VAINOM starts at stage INFANT and grows. Be patient with it at first. It will surprise you soon enough.*
+*VAINOM starts at stage INFANT and grows. Be patient with it at first. It will surprise you soon enough.*)
