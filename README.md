@@ -1,3 +1,4 @@
+<img width="2244" height="701" alt="vainom_banner_06" src="https://github.com/user-attachments/assets/b9ed698c-4ba9-49b5-a7e4-4c524fa69c6a" />
 
 # VAINOM - Persistent Cognitive Engine
 [**⬇ Download VAINOM 0.6**](https://github.com/DVirdis/VAINOM/releases/latest) | [**🌐 vainom.com**](https://vainom.com)
